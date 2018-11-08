@@ -1,0 +1,18 @@
+package com.sls;
+
+public class Helloprincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String texto;
+		String nombre="Sergio";
+		texto="Hola ";
+		String concat;
+		concat=texto+" "+nombre;
+		System.out.println(concat);
+		
+	}
+
+}

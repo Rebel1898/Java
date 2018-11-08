@@ -1,0 +1,4 @@
+package com.sls.models; //Esto no es ejecutable, solo la definicion de un concepto
+public class Usuario {
+
+}

@@ -1,0 +1,23 @@
+package com.sls;
+
+public class Mascotas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+String [] mascotas= new String[999];
+		
+		mascotas = new String[999];
+		
+	
+		
+		for (int i = 0; i < mascotas.length; i++) {
+			
+			mascotas[i]= " Iñigo Mendoza";
+			System.out.println("Soy la mascota numero "+i+" y mi nombre es"+mascotas[i]+". Preparate a morir");
+		}
+		
+
+	}
+
+}

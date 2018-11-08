@@ -1,0 +1,15 @@
+package com.sls;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Definiendo arrays
+		
+		String [] meses= new String[12];
+		
+		meses = new String[3];
+	}
+
+}

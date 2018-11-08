@@ -1,0 +1,19 @@
+package com.sls;
+
+public class Helloprincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String texto;
+		String nombre="Sergio";
+		texto="Hola ";
+		String concat;
+		int edad=20000;
+		concat=texto+" "+nombre+" tienes "+edad+"años";
+		System.out.println(concat);
+		
+	}
+
+}

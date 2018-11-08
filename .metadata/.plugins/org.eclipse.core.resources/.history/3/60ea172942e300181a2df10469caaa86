@@ -1,0 +1,28 @@
+package com.sls;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Definiendo arrays
+		
+		String [] meses= new String[12];
+		
+		meses = new String[3];
+		
+		meses[0]="Pluvioso";
+		meses[1]="Ventoso;
+		meses[2]="Germinal";
+		meses[3]="Floreal";
+		meses[4]="Pradial";
+		meses[5]="Mesidor";
+		meses[6]="Termidor";
+		meses[7]="Fructidor";
+		meses[8]="Vendimiario";
+		meses[9]="Brumario";
+		meses[10]="Frimario";
+		meses[11]="Nivoso";
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.sls;
+
+public class Mascotas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+String [] mascotas= new String[1001];
+		
+		mascotas = new String[1001];
+		
+	   
+		
+		for (int i = 0; i < mascotas.length; i++) {
+			
+			mascotas[i]= " Iñigo Montoya";
+			System.out.println("Hola mi nombre es"+mascotas[i]+" "+i+". Tu mataste a mi padre. Preparate a morir");
+		
+		}
+		
+//Generar nombres de manera aleatoria
+		
+		
+		
+		
+	
+	}//Fin de main
+	
+	
+	public static String generarnombre(){
+			
+	
+	return " ";
+	
+	}
+	}
+
+}//Fin de class 

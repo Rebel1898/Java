@@ -1,0 +1,18 @@
+package com.sls;
+
+public class Decisor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a,b,c;
+		a=20;
+		b=30;
+		c=40;
+		
+		if (a>b) { System.out.println("A es el mayor de los 3");}		}
+		
+	else {System.out.println("a no es el mas grande");};
+		
+	}
+
+

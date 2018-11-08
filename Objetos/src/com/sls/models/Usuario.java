@@ -1,0 +1,10 @@
+package com.sls.models; //Esto no es ejecutable, solo la definicion de un concepto
+public class Usuario {
+
+	public String nombre;
+	public String apellido;
+	public String email;
+	public String edad;
+
+	
+}
