@@ -9,11 +9,11 @@ public class Principal {
 		pepito.nombre="Horse";
 		pepito.apellido="Ramon";
 		pepito.email="Horse@pony.la";
-		pepito.edad=70;
+		pepito.edad="7 de humano, 1 de perro";
 		
 				
-		System.out.println(pepito.nombre+" "+pepito.apellido+" "+pepito.email+" "+pepito.edad);
-		System.out.println(pepito.getDatosCompletos());
+		System.out.println(pepito.apellido+pepito.nombre+pepito.email+pepito.edad);
+		
 		
 		
 		

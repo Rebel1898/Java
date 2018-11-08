@@ -8,7 +8,7 @@ public class Usuario {
 
 	public String getDatosCompletos() {
 		
-		String datos =this.nombre+" "+this.apellido+" "+this.email+" "+this.edad+". ";
-		return datos;
+		
+		return "";
 	}
 }
