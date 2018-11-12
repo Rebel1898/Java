@@ -1,0 +1,151 @@
+package com.sls.models;
+
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Modelosamigos pepe = new Modelosamigos();
+		 
+		// pepe.id=101;
+		// pepe.email="pepe@grr.la";
+		// pepe.nombre="pepe";
+		// pepe.edad=23;
+		 //pepe.viveCerca=true;
+		 
+		//Lo mismo usando el consstructor
+		
+		Modelosamigos pepe= new Modelosamigos(101,"Pepe","pepe@grr.la",25,true);
+		Modelosamigos Juana= new Modelosamigos(101,"Juana","peperonivolador@grr.la",25,true);
+		Modelosamigos Pietro= new Modelosamigos(101,"Pietro","pioetro@grr.la",25,true);
+		Modelosamigos Lola= new Modelosamigos(101,"Lola","lola@grr.la",25,true);
+		Modelosamigos kol= new Modelosamigos(101,"kol","lola@grr.la",25,true);
+
+ //Modelosamigos Juan = new Modelosamigos();
+ //pepe.id=111;
+		// pepe.email="juan@grr.la";
+		 //pepe.nombre="juan";
+		 //pepe.edad=23;
+		 //pepe.viveCerca=true;
+
+		
+ArrayList<Modelosamigos> amigospepe =new Arraylist<Modelosamigos>();
+		 
+		 amigospepe.add(Juana);
+		 amigospepe.add(Pietro);
+		 
+		 
+		 
+		 
+		 System.out.println(pepe.showInfo());
+		 
+		 
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------
+
+
+package com.sls.models;
+
+import java.util.ArrayList;
+
+public class Modelosamigos {
+
+	private int id;
+
+	private String nombre;
+	private String email;
+	private int edad;
+	private boolean viveCerca;
+	// publicModelosamigos[] misamigos;//Cuidadito con los arrays
+
+	private Arraylist<Modeloamigos> misamigos;
+
+//Haacer privadas las propuedades para evitar que otras clases las modifiquen.
+
+	// public Modelosamigos(int idrec) {this.id=idrec;}
+
+	public Modelosamigos() {
+	};
+
+	// constructor right click>source>generate constructor from fields
+	public Modelosamigos(int id, String nombre, String email, int edad, boolean viveCerca) {
+		super();// Se refiere a la clase superior, para este caso es irrelevante
+		this.id = id;
+		this.nombre = nombre;
+		this.email = email;
+		this.edad = edad;
+		this.viveCerca = viveCerca;
+
+	}
+
+	public String showInfo() {
+		String texto = "";
+		texto += "Id:" + this.id + "\n";
+		texto += "Nombre:" + this.nombre + "\n";
+		texto += "email:" + this.email + "\n";
+		texto += "edad:" + this.edad + "\n";
+		texto += "vive cerca:" + this.viveCerca + "\n";
+
+		texto += "Amigos";
+
+		for (Modelosamigos amigo : this.misamigos) {
+
+			texto += amigo.nombre + " (" + amigo.email + ") " + (amigo.viveCerca ? "Vive cerca" : "Vive lejos");
+		}
+
+		return texto;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public boolean isViveCerca() {
+		return viveCerca;
+	}
+
+	public void setViveCerca(boolean viveCerca) {
+		this.viveCerca = viveCerca;
+	}
+
+	public Arraylist<Modeloamigos> getMisamigos() {
+		return misamigos;
+	}
+
+	public void setMisamigos(Arraylist<Modeloamigos> misamigos) {
+		this.misamigos = misamigos;
+	}
+
+}
